@@ -1,0 +1,10 @@
+version: 2
+ 
+models:
+  - name: customers
+    descriptions: This table shows the count of new customers per month
+    columns:
+      - name: signup_month
+        description: primary_key
+      - name: new_customers
+        description: count of new customers

@@ -1,0 +1,19 @@
+version: 2
+ 
+models:
+  - name: customer_orders
+    description: '{{ doc ("staging")}}' This model contains the timestamp for the first customer order as well as the number of orders and the customer name.
+    columns:
+      - name: customer_id
+        description: primary_key
+        tests:
+         - unique
+         - not_null
+      - name: name
+        description: customer name
+      - name: email
+        description: customer email
+      - name: first_order_at
+        description: timestamp for first order
+      - name: orders
+        description: number of orders per customer

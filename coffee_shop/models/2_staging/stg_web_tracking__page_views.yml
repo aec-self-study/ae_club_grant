@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: stg_web_tracking__page_views
+    description: This table contains the list of coffeeshop customers
+    columns:
+      - name: page_view_id
+        description: Primary Key
+        tests:
+          - unique
+          - not_null

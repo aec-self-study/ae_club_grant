@@ -10,7 +10,7 @@ renamed as (
         id as page_view_id,
         visitor_id,
         device_type,
-        timestamp,
+        timestamp as page_view_timestamp,
         page,
         customer_id
 

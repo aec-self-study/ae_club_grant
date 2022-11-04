@@ -1,0 +1,37 @@
+version: 2
+
+models:
+  - name: int_user_sessions
+    description: This model generates a visitor_session_id for every 30 minute session
+    columns:
+      - name: customer_id
+        description: ""
+
+      - name: visitor_id
+        description: ""
+
+      - name: device_type
+        description: ""
+
+      - name: page_view_timestamp
+        description: ""
+
+      - name: page
+        description: ""
+
+      - name: page_view_id
+        description: ""
+
+      - name: last_event
+        description: ""
+
+      - name: is_new_session
+        description: ""
+
+      - name: event_diff
+        description: difference between the page_view_timestamp and the last_event timestamp
+
+      - name: visitor_session_id
+        description: primary key
+        tests:
+          - not_null

@@ -15,7 +15,7 @@ identifiable_customers as (
     user_stitching.customer_id,
     user_stitching.list_of_visitor_ids[offset(0)] as visitor_id, --calling the first visitor_id as the consolidated visitor_id
     page_views.device_type,
-    page_views.timestamp,
+    page_views.page_view_timestamp,
     page_views.page,
     page_views.page_view_id
   from user_stitching
@@ -35,4 +35,3 @@ final as (
 )
 
 select * from final
-limit 10

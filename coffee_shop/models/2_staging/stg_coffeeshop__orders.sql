@@ -7,13 +7,21 @@ with source as (
 renamed as (
 
     select
+        --IDs
         id as order_id,
-        created_at,
         customer_id,
-        total,
+
+        --Context
         address,
         state,
-        zip
+        total,
+        zip,
+
+        --Dates
+        created_at,
+
+        --Booleans
+        row_number() over (partition by customer_id order by created_at) = 1 as is_first_order
 
     from source
 

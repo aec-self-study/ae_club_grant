@@ -1,0 +1,25 @@
+version: 2
+
+models:
+  - name: int_user_stitching
+    description: This model creates a 1:1 relationship between visitor_id and customer_id where the customer is known
+    columns:
+      - name: customer_id
+        description: ""
+
+      - name: visitor_id
+        description: ""
+        tests:
+          - not_null
+
+      - name: device_type
+        description: ""
+
+      - name: timestamp
+        description: ""
+
+      - name: page
+        description: ""
+
+      - name: page_view_id
+        description: ""

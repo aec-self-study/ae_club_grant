@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: stg_web_tracking__page_views
+    description: ""
+    columns:
+      - name: page_view_id
+        description: primary key
+        tests:
+          - unique
+          - not_null
+
+      - name: visitor_id
+        description: ""
+
+      - name: device_type
+        description: ""
+
+      - name: page_view_timestamp
+        description: ""
+
+      - name: page
+        description: ""
+
+      - name: customer_id
+        description: ""

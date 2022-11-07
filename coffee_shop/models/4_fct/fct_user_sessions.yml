@@ -1,0 +1,29 @@
+version: 2
+
+models:
+  - name: fct_user_sessions
+    description: This model produces an aggregated users session view
+    columns:
+      - name: customer_id
+        description: ""
+
+      - name: visitor_id
+        description: ""
+
+      - name: device_type
+        description: ""
+
+      - name: visitor_session_id
+        description: ""
+
+      - name: session_start_time
+        description: ""
+
+      - name: session_end_time
+        description: ""
+
+      - name: session_length
+        description: ""
+
+      - name: made_purchase
+        description: whether or not the visitor made a purchase during their sessions

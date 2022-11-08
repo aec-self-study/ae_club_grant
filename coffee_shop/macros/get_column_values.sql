@@ -1,3 +1,4 @@
+-- Generates a column of distinct values from the table
 {% macro get_column_values(column_name, relation) %}
 
 {% set relation_query %}
@@ -17,5 +18,3 @@ order by 1
 {% endif %}
 
 {{ return(results_list) }}
-
-{% endmacro %}

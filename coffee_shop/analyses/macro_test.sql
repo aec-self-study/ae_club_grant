@@ -1,1 +1,0 @@
-{{ get_column_values('payment_method', ref('raw_payments')) }}

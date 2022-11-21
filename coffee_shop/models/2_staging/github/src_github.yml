@@ -5,6 +5,21 @@ sources:
     database: analytics-engineers-club
     tables:
       - name: pull_request
+        columns:
+          - name: id
+            descriptions: "This is NOT the pull request number"
+            tests:
+              - unique
+              - not_null
+      
       - name: issue
+        descriptions: "This table contains both issues and pull requests"
+        columns:
+          - name: id
+            tests:
+              - unique
+              - not_null
+      
       - name: issue_merged
+        
       - name: repository

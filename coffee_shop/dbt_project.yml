@@ -48,3 +48,7 @@ models:
   web_tracking:
     example:
       +materialized: view
+
+  advanced_dbt_examples:
+    example:
+      +materialized: view

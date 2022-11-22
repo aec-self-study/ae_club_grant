@@ -1,4 +1,4 @@
 {{ codegen.generate_base_model(
-    source_name='github',
-    table_name='repository'
+    source_name='advanced_dbt_examples',
+    table_name='favorite_ice_cream_flavors'
 ) }}
